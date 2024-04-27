@@ -8,6 +8,7 @@ const todosPersonajes = async(state)=>{
 const unicoPersonaje = async (id, state) =>{
     const peticion= await axios.get(`https://rickandmortyapi.com/api/character/${id}`)
     state(peticion.data)
+    console.log(peticion.data)
 }
 
 
